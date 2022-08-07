@@ -1,0 +1,95 @@
+body {
+    background-color: #F8F9FA;
+}
+/* colors: #3f4144 */
+#hero {
+    display: block !important;
+}
+
+#call-to-action-2 {
+    display: none !important;
+}
+
+#work1 {
+    margin-left: -100px;
+}
+
+.mousehover:hover {
+    /* font-weight: bold; */
+    color: violet !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.work-icon {
+    margin: -30px 25px 0 -30px !important;
+}
+
+/* 540px	720px	960px	1140px	1320px */
+
+@media screen and (min-width: 960px) {
+    #call-to-action {
+        margin-left: -110px;
+    }
+
+    #about {
+        padding: 50px 50px 0 0 !important;
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    #about {
+        margin-top: -60px !important;
+    }
+
+    .github-work-link {
+        padding: 30px 25px 0 0 !important;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    #hero {
+        display: none !important;
+    }
+
+    #call-to-action-2 {
+        display: block !important;
+        margin-inline: 15px !important;
+        overflow-x: hidden;
+    }
+
+    #section-heading {
+        margin-inline: 15px !important;
+        overflow-x: hidden;
+    }
+
+    #social {
+        max-height: 564px !important;
+    }
+
+    #others {
+        margin-left: 0px !important;
+    }
+
+    #contact-upwork {
+        margin-right: 5px !important;
+    }
+
+    #contact-fiverr {
+        margin-right: 5px !important;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    #work1 {
+        margin-left: 0px;
+    }
+
+    #github {
+        margin-top: -15px !important;
+        margin-bottom: 15px !important;
+    }
+}
