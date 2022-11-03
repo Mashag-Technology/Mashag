@@ -1,6 +1,7 @@
 body {
     background-color: #F8F9FA;
 }
+
 /* colors: #3f4144 */
 #hero {
     display: block !important;
@@ -26,11 +27,13 @@ body {
 .work-icon {
     margin: -30px 25px 0 -30px !important;
 }
-.card-image-background:hover{
+
+.card-image-background:hover {
     /* cursor: pointer; */
     position: relative;
 }
-.background-img{
+
+.background-img {
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -39,13 +42,15 @@ body {
     height: 165px;
     transition: .5s ease;
 }
+
 .z {
     transition: 1s ease;
     opacity: 0.99;
     z-index: 1;
-    
-  }
-.z h4{
+
+}
+
+.z h4 {
     text-decoration: underline;
 }
 
@@ -59,7 +64,7 @@ body {
     z-index: 1;
 }
 
-.card-image-background:hover .z h4{
+.card-image-background:hover .z h4 {
     text-decoration: none;
 }
 
@@ -142,4 +147,69 @@ body {
         margin-top: -15px !important;
         margin-bottom: 15px !important;
     }
+}
+
+
+
+/* Roboflow stuff */
+
+/* html,
+body {
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+} */
+
+#videobody video {
+    transition: filter 250ms linear;
+}
+
+#videobody .loading video {
+    filter: grayscale(1) brightness(0.25);
+}
+
+#videobody .loading:before {
+    content: "Loading Model...";
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    z-index: 100;
+}
+
+html,
+#videobody,
+video,
+canvas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+video,
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#fps {
+    /* position: fixed;
+    bottom: 10px;
+    left: 10px; */
+    color: white;
+    z-index: 1;
+}
+
+#fps:empty {
+    display: none;
+}
+
+#fps:after {
+    content: " fps";
 }
