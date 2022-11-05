@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <!-- roboflow dimentiopn here -->
+    <meta name="viewport" content="width=640, user-scalable=no" />
+
     <meta name="google-site-verification" content="PROSTelkNe9oEXGzUoE5fcrgv7_0S0Hh1BzN9yXv0sU" />
     <meta name="viewport" content="width=640, user-scalable=no" />
     <title>Mashag Technology</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/113654cb35.js" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -22,11 +25,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"
         integrity="sha512-6K6+H87tLdCWvY5ml9ZQXLRlPlDEt8uXmtELhuJRgFyEDv6JvndWHg3jadJuBVGPEhhA2AAt+ROMC2V7EvTIWw=="
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.roboflow.com/0.2.22/roboflow.js"></script>
+
+    <link rel="stylesheet" href="./css/poc.css">
     <script src="./scripts/main.js"></script>
+
 </head>
 
-<body>
+<body class="loading">
 
     <!-- nav bar -->
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-dark py-2">
@@ -44,9 +51,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" href="./index.html#features">Features</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-light" href="#demo">Demo</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link text-light" href="./index.html#solutions">Solutions</a>
                     </li>
@@ -64,81 +68,11 @@
     <!-- nav bar end -->
 
 
-    <!-- Solution -->
-    <br id="solutions">
-    <hr>
-    <!-- Featured Solution -->
-    <section class="container mt-2 bg-warning px-0">
-        <div class="col-sm-12 py-2 my-4 bg-dark rounded" id="section-heading">
-            <h1 class="text-center text-light">Our Solutions</h1>
-        </div>
-        <div class="card mb-3">
-            <div class=" row g-0">
-                <div class="col-md-8 bg-danger" style="height: 70vh;">
-                    <!-- video goes here -->
-                    <!-- <img src="./img/work.png" class="img-fluid" alt="..."> -->
 
-
-
-                    <!-- <link rel="stylesheet" href="./main.css"> -->
-
-                    <!-- <body class="loading"> -->
-                    <div id="videobody" class="loading">
-                        <video id="video" class="m-0 p-0 float-start" autoplay muted playsinline></video>
-                        <div id="fps"></div>
-                    </div>
-
-                </div>
-                <div class="col-md-4 px-0 mx-0 position-relative">
-                    <!-- <p class="m-0 text-end px-5 mt-4 fw-bold text-secondary">Featured Project</p> -->
-                    <p class="m-0 text-end px-5 mt-4 fw-bold text-secondary">Featured Solution</p>
-                    <!-- <a class="text-dark text-end" href="https://alisters-ecommerce-app.azurewebsites.net"
-                        target="_blank">
-                        <h2 class="card-title px-5 mt-1">E-commerce Store <i class="fas fa-external-link-alt fa-xs"></i>
-                        </h2>
-                    </a> -->
-                    <h2 class="card-title text-start px-2 mt-1 mx-0">Knife Detection</h2>
-                    <div class="card-body bg-dark mt-4 text-light mx-0 text-justify rounded" id="work12">
-                        <p class="card-text p-0">
-                            Our Plug-and-Play software solution that integrates state-of-the-art Artificial Intelligence
-                            to physical environment. Mashag AI XR enhances the physical space by using AI technology.
-                        </p>
-                    </div>
-
-                    <!-- button goes here -->
-                    <!-- <div class="card-body bg-dark text-light text-justify rounded p-1 position-absolute bottom-0 start-50 translate-middle"
-                        id="work1">
-                        <a href="" class="" target="_blank">
-                            <button type="button" class="btn btn-outline-light btn-lg" onclick="changeID()">Open
-                                Webcam</button>
-                        </a>
-                    </div> -->
-
-                    <!-- <script>
-                        function getID() {
-                            document.getElementById("video2").innerHTML = element.id;
-                            document.getElementById("fps2").innerHTML = element.id;
-                        }
-                        function changeID() {
-                            element.id = "asdf";
-                            element.id = "fdsa";
-                            getID();
-                        }
-                        let element = document.getElementById("asdf");
-                        // let element2 = document.getElementById("fdsa");
-                    </script> -->
-
-
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Solution End -->
-
-
-
+    <!-- <section class="loading"> -->
+    <video id="video" autoplay muted playsinline></video>
+    <div id="fps"></div>
+    <!-- </section> -->
 
     <!-- Footer  -->
     <br>
@@ -160,7 +94,6 @@
                     </div>
                 </div>
                 <div class="col-md-7 row mx-0">
-                    <!-- address -->
                     <div class="col-md-6 px-0 mt-2 mb-3 text-md-start text-center">
                         <i class="fas fa-map-marker-alt"></i>
                         Level 23, Menara Exchance 106,
@@ -168,7 +101,6 @@
                         Razak Exchange,
                         <br> 55188 Kuala Lumpur
                     </div>
-                    <!-- logo -->
                     <div class="col-md-6 text-center my-2">
                         <td><i class="fab fa-android1 fa-2x">Mashag Technology</i></td>
                     </div>
