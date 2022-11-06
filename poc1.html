@@ -3,20 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <!-- roboflow dimentiopn here -->
+    <meta name="viewport" content="width=640, user-scalable=no" />
+
     <meta name="google-site-verification" content="PROSTelkNe9oEXGzUoE5fcrgv7_0S0Hh1BzN9yXv0sU" />
-    <title>POC - Mashag Technology</title>
+    <meta name="viewport" content="width=640, user-scalable=no" />
+    <title>Mashag Technology</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/113654cb35.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"
+        integrity="sha512-6K6+H87tLdCWvY5ml9ZQXLRlPlDEt8uXmtELhuJRgFyEDv6JvndWHg3jadJuBVGPEhhA2AAt+ROMC2V7EvTIWw=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.roboflow.com/0.2.22/roboflow.js"></script>
+
+    <link rel="stylesheet" href="./css/poc.css">
+    <script src="./scripts/main2.js"></script>
 
 </head>
 
-<body>
+<body class="loading">
 
     <!-- nav bar -->
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-dark py-2">
@@ -51,14 +68,16 @@
     <!-- nav bar end -->
 
 
-    <iframe width="100%" height="810px" class="pt-5"
-        src="https://1b56a396.sibforms.com/serve/MUIEAGu3OCtIANlAdCW8PvcNAz9niFDmDIrKFAfxN5N3mASIU7rvX2pb9MI7MSt4UrtILnp4JsekJkr__LcqTaTsBDPH6GvEdcTnqNz-CX7303SeKSfvJWwg8hq96OpM23aizKAM0Tg9w3e-WTXuzqlqClk_YZZ2dAR4QGZus0iLfayKbYOdX6OJKFBITK2Lb5UfIpjXOoiRedvP"
-        frameborder="0" scrolling="auto" allowfullscreen
-        style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;">
-    </iframe>
+
+    <!-- <section class="loading"> -->
+    <video id="video" autoplay muted playsinline></video>
+    <div id="fps"></div>
+    <!-- </section> -->
 
     <!-- Footer  -->
-    <div class="container-fluid bg-dark text-light footer">
+    <!-- <br>
+    <br>
+    <div class="container-fluid bg-dark text-light">
         <div class="container">
             <div class="row py-3">
                 <div class="col-md-5 row px-0">
@@ -92,7 +111,7 @@
         <div class="m-0 py-2 text-center">&copy; Copyright <span id='currentDate'>2021</span> Mashag Technology - All
             rights reserved.
         </div>
-    </div>
+    </div> -->
 
     <!-- Footer End  -->
 
